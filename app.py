@@ -27,6 +27,7 @@ if uploaded_file is not None:
     selected_user = st.sidebar.selectbox("Show analysis wrt",user_list)
 
     if st.sidebar.button("Show Analysis"):
+        st.image("hena.jpg")
 
         # Stats Area
         num_messages, words, num_media_messages, num_links = helper.fetch_stats(selected_user,df)
